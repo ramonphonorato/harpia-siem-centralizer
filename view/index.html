@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#131e28" />
+    <meta
+      name="description"
+      content="Powerful SIEM by SafeLabs"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <title>HARPIA STATUS SERVICES</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <Header></Header>
+    <div class="container">
+      <main>
+        <img class="logoHarpia" src="assets/img/logoHarpiaHorizontal.svg"/>
+        <h1>HARPIA SERVICES STATUS</h1>
+        <p>Status of the services necessary for the functional application of Harpia Siem.</p>
+        <ul>
+          <li class="headerTable">
+            <div class="statusSignal"></div>
+            <div class="service">SERVICE</div>
+            <div class="statusText">STATUS</div>
+          </li>
+          <li id="centralizer" class="waiting">
+            <div class="statusSignal"><div class="circle"></div></div>
+            <div class="service">Harpia centralizer</div>
+            <div id="centralizerText" class="statusText">waiting...</div>
+          </li>
+          <li id="cloud" class="waiting">
+            <div class="statusSignal"><div class="circle"></div></div>
+            <div class="service">Harpia cloud</div>
+            <div id="cloudText" class="statusText">waiting...</div>
+          </li>
+          <div class="powered">© 2022 SafeLabs. All rights reserved.</div>
+        </ul>
+      </main>
+    </div> 
+  </body>
+  <script type="text/javascript" src="assets/js/controller.js"></script>
+</html>
